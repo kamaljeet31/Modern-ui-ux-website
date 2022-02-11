@@ -1,4 +1,5 @@
-import { Article, Brand, Cta } from './Components'
+import './App.css'
+import { Brand, Cta, Navbar } from './Components'
 import {
   Blog,
   Features,
@@ -10,12 +11,13 @@ import {
 
 function App() {
   return (
-    <div>
-      <h1>GPT-3</h1>
-      <Article />
+    <div className='App'>
+      <div className='gradient__bg'>
+        <Navbar />
+        <Header />
+      </div>
       <Brand />
       <Cta />
-      <Header />
       <Features />
       <Blog />
       <Possibility />
